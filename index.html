@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muhammad Arif | Personal Website</title>
+    <meta name="description" content="Muhammad Arif's personal website. Software Engineering student with passion for AI and technology from Buner, KPK.">
+    <meta name="keywords" content="Muhammad Arif, Software Engineer, Buner, AI, DIT, Sarhad University, Personal Website">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        /* Splash Screen Styling */
+        #splash {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #1a73e8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 9999;
+            transition: opacity 1s ease;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        .splash-logo {
+            font-size: 48px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+            animation: popIn 1s ease-in-out;
+        }
+
+        .splash-subtext {
+            font-size: 20px;
+            color: #e0e0e0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes popIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #1a73e8;
+            font-weight: 500;
+        }
+
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo-text {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            background-color: white;
+            color: #1a73e8;
+            padding: 8px 14px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-img {
+            width: 220px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        h2 {
+            color: #1a73e8;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 6px;
+            margin-top: 30px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .contact {
+            background-color: #e8f0fe;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .contact a {
+            text-decoration: none;
+        }
+
+        blockquote {
+            font-style: italic;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a73e8;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-img {
+                width: 60%;
+            }
+
+            .logo-text {
+                position: static;
+                margin: 0 auto 10px;
+                display: block;
+                text-align: center;
+            }
+
+            header {
+                padding-top: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="splash">
+        <div class="splash-logo">MA</div>
+        <div class="splash-subtext">Welcome to Muhammad Arif's Website</div>
+    </div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#details">Details</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        <div class="logo-text">MA</div>
+        <h1>Muhammad Arif</h1>
+        <p>BS Software Engineering | Future AI Engineer</p>
+    </header>
+
+    <div class="container">
+        <div class="profile" id="about">
+            <img src="WhatsApp%20Image%202025-07-02%20at%2005.02.41_a8b3b549.jpg" alt="Muhammad Arif" class="profile-img">
+            <div class="profile-info">
+                <h2>About Me</h2>
+                <p>My name is Muhammad Arif. I am from Chamla Sura, Buner, KPK, Pakistan. I am currently in my second semester of a <strong>BS in Software Engineering</strong> at <strong>Sarhad University, Mardan Campus</strong>.</p>
+                <p>I have also completed a Diploma in Information Technology from Bright Future Computer Academy (Sura Buner). My father is a businessman, and I previously managed a small shop on my own. It was always his dream to see me become a Software or AI Engineer.</p>
+                <p>I am proud to be the first person in my family to pursue a bachelor’s degree. I am deeply grateful to Allah for this opportunity and blessing.</p>
+            </div>
+        </div>
+
+        <h2 id="details">Personal Details</h2>
+        <ul>
+            <li><strong>Age:</strong> 19 years</li>
+            <li><strong>Height:</strong> 5.3 feet</li>
+            <li><strong>Weight:</strong> 56 kg</li>
+            <li><strong>Marital Status:</strong> Engaged (Mangni Ho Chuki Hai)</li>
+            <li><strong>Ethnicity:</strong> Pashtoon (Pathan)</li>
+            <li><strong>Religion:</strong> Islam</li>
+        </ul>
+
+        <h2 id="education">Education</h2>
+        <ul>
+            <li>Matriculation – QPS Buner</li>
+            <li>Intermediate – CPS Buner</li>
+            <li>Diploma in IT – Bright Future Computer Academy (Sura Buner)</li>
+            <li>BS Software Engineering – Sarhad University, Mardan Campus</li>
+        </ul>
+
+        <h2>Experience</h2>
+        <p>1 year of teaching at Bright Future Computer Academy (Sura Buner) (DIT course instructor).</p>
+
+        </ul>
+
+        <h2>Skills & Goals</h2>
+        <ul>
+            <li>Strong computer skills (DIT Certified)</li>
+            <li>Interested in AI & Machine Learning</li>
+            <li>Aspiring to become a professional AI Engineer</li>
+        </ul>
+
+        <h2>Quote I Live By</h2>
+        <blockquote>
+            "Success is not final, failure is not fatal: It is the courage to continue that counts." – Winston Churchill
+        </blockquote>
+
+        <div class="contact" id="contact">
+            <h2>Contact</h2>
+            <p><strong>Email 1:</strong> <a href="mailto:arifjanbuner2@gmail.com">arifjanbuner2@gmail.com</a></p>
+            <p><strong>Email 2:</strong> <a href="mailto:arifjanbunero04@gmail.com">arifjanbunero04@gmail.com</a></p>
+            <p><strong>Facebook:</strong> <a href="https://www.facebook.com/share/16yksLdrZm/?mibextid=wwXIfr" target="_blank">facebook.com/ar_dynasty</a></p>
+            <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@ar_dynasty?_t=ZS-8xgweWJuILv&_r=1" target="_blank">@ar_dynasty</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/03319998552" target="_blank">Chat with me on Whatsapp</a></p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Muhammad Arif | All rights reserved.
+    </footer>
+
+    <script>
+        window.addEventListener("load", function () {
+            const splash = document.getElementById("splash");
+            setTimeout(() => {
+                splash.style.opacity = 0;
+                setTimeout(() => {
+                    splash.style.display = "none";
+                }, 1000);
+            }, 2000);
+        });
+    </script>
+
+</body>
+
+</html>
